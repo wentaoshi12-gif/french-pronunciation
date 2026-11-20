@@ -12,6 +12,9 @@
 @media(max-width:1000px){.app{grid-template-columns:220px minmax(0,1fr);grid-template-rows:66px minmax(0,1fr)}.right{position:fixed;right:0;top:66px;bottom:0;width:310px;z-index:16;box-shadow:-20px 0 35px #1b365b20;transform:translateX(103%);transition:.2s}.right.open{transform:none}.center{grid-column:2}.top-mid{display:none}.mobile-open{display:inline-flex;align-items:center;justify-content:center;gap:5px;border:1px solid #d4dfe9;background:#f6f9fc;border-radius:9px;padding:8px 11px;color:#275982;font-size:11px}.mobile-close{display:inline-grid}.searchbar{max-width:200px}.toolbar{gap:8px}}
 @media(max-width:700px){.app{display:flex;flex-direction:column;height:100dvh;min-height:480px}.top{flex-shrink:0;height:62px;padding:0 12px;gap:8px}.logo{width:34px;height:34px;font-size:24px}.brand{min-width:0;flex:1;gap:8px}.brand-title{font-size:14px}.brand-sub{font-size:9px}.nav-ctrl{margin-left:0;gap:4px}.pageno{min-width:63px;font-size:10px}.iconbtn{height:32px;min-width:30px;font-size:18px}.left{display:none;position:fixed;z-index:30;top:62px;left:0;bottom:0;width:270px;box-shadow:10px 0 30px #1c395a26}.left.open{display:flex}.center{flex:1;min-height:0}.right{top:62px;width:min(320px,91vw)}.toolbar{min-height:52px;padding:9px;justify-content:space-between}.tool-label{display:none}.segment{padding:2px}.seg-btn{font-size:11px;padding:6px 8px}.range{width:64px}.searchbar{max-width:130px}.searchbar input{padding-left:24px;font-size:11px}.search-ico{left:7px}.book-workspace{padding:18px 15px 45px}.reading-hint{font-size:10px;padding:8px}.top .mobile-open{padding:7px;font-size:17px;min-width:33px}.right .mobile-close{display:inline-grid}.top .toc-open{display:inline-grid}}
 @media(min-width:701px){.top .toc-open{display:none}}
+  .listen-link{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:35px;padding:0 12px;border-radius:9px;background:#17355c;color:#fff;font-size:11px;font-weight:750;white-space:nowrap}
+  .listen-link:hover{background:#245b8d}
+  @media(max-width:700px){.listen-link{height:32px;padding:0 8px;font-size:10px}.listen-word{display:none}}
 </style>
 </head>
 <body>
@@ -20,7 +23,7 @@
   <button id="toc-toggle" class="iconbtn toc-open" title="打开目录" aria-label="打开目录">☰</button>
   <div class="brand"><div class="logo">é</div><div><div class="brand-title">Parlons <span style="font-weight:400;color:#94a2b0">/</span> 逐页点读</div><div class="brand-sub">零基础法语复习手册 · 最新原页精确复刻</div></div></div>
   <div class="top-mid"><div class="pill"><span class="voice-dot"></span>原版页面</div><div class="pill">全书 <strong>46</strong> 页</div><div class="pill">逐词 + 逐句双模式</div></div>
-  <nav class="nav-ctrl"><button id="prev-top" class="iconbtn" aria-label="上一页">‹</button><div class="pageno" id="top-page">PDF 1 / 46</div><button id="next-top" class="iconbtn" aria-label="下一页">›</button><button id="panel-toggle" class="mobile-open" title="发音控制">发音设置</button></nav>
+  <nav class="nav-ctrl"><a class="listen-link" href="listening.html" title="打开听力训练">♪ <span class="listen-word">听力训练</span></a><button id="prev-top" class="iconbtn" aria-label="上一页">‹</button><div class="pageno" id="top-page">PDF 1 / 46</div><button id="next-top" class="iconbtn" aria-label="下一页">›</button><button id="panel-toggle" class="mobile-open" title="发音控制">发音设置</button></nav>
 </header>
 <aside class="left" id="left">
   <div class="lefthead"><div class="tiny-upper">THE CONTENTS</div><h2>手册目录</h2><p>保持原PDF顺序与内容。点击章节跳转到对应页面。</p></div>
