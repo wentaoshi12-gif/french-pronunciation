@@ -1,6 +1,6 @@
 # Parlons · French Handbook Read-Aloud
 
-本仓库提供第4版法语手册的42页逐页点读站，原PDF高清页面，支持单词/句子点击朗读、翻页和语速调节。
+本仓库提供最新版法语手册的46页逐页点读站，原PDF高清页面，支持单词/句子点击朗读、连续滚动、翻页和语速调节。
 
 启用 GitHub Pages：Settings → Pages → Build and deployment → Deploy from a branch → main → /(root) → Save。
 
